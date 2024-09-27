@@ -1,0 +1,406 @@
+:root {
+    --cor-de-fundo: #EEE5EC;
+}
+
+/* Fonte de texto 1 e 2 */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* fonte de texto 3 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+}
+
+header {
+    background-color: var(--cor-de-fundo);
+    height: 107px;
+}
+
+.cabeçalho__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+    margin-top: -10%;
+    gap: 50px;
+}
+
+.cabeçalho__menu__link {
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #3b5998;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 6px;
+    box-shadow: 4px -1px #1a3163;
+}
+
+.icone__menu__link {
+    display: none;
+}
+
+.cabeçalho__menu__link:hover {
+    color: #7c9ee8fa;
+    cursor: pointer;
+    box-shadow: 5px -3px #4374dd;
+}
+
+.logo__lucas {
+    display: flex;
+    font-size: 1.5rem;
+    padding-left: 3%;
+    padding-top: 0%;
+
+    >img {
+        width: 12.5rem;
+    }
+}
+
+
+.texto__introducao {
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    margin: 24px auto;
+    background-color: var(--cor-de-fundo);
+}
+
+.primeira__linha {
+    font-size: 0.625rem;
+    color: #3b5998;
+    font-family: "League Spartan", sans-serif;
+}
+
+.segunda__linha {
+    font-size: 16px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.terceira__linha {
+    font-size: 0.8125rem;
+    color: #847c7ca3;
+    font-family: "Roboto", sans-serif;
+}
+
+.acesse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -2%;
+    color: #1e1d1d;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 4%;
+}
+
+.botao__github {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(37, 36, 36, 0.952);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+    >img {
+        width: 20px;
+    }
+}
+
+/* estilizando o botão do github*/
+
+.botao__github:hover {
+    background-color: rgba(52, 49, 49, 0.801);
+    cursor: help
+}
+
+.botao__linkedin {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #0e76a8;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+
+    >img {
+        width: 20px;
+        margin-right: 5px;
+    }
+}
+
+/* estilizando o botao do linkedin*/
+
+.botao__linkedin:hover {
+    background-color: #3596c4;
+    cursor: help;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 24px auto;
+    margin-right: 3%;
+    margin-top: 5%;
+    background-color: var(--cor-de-fundo);
+}
+
+.html {
+    margin-left: 3%;
+    border-style: groove;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    border-color: #C0C0C0;
+    background-color: var(--cor-de-fundo);
+}
+
+.logotipo_html {
+    display: 0 auto;
+    text-align: center;
+    background-color: #EEE5EC;
+
+    >img {
+        width: 23%;
+        font-size: 1.25rem;
+        margin-left: 39%;
+    }
+}
+
+.info_html {
+    text-align: start;
+    font-size: 0.75rem;
+    width: 80%;
+    margin-top: 3%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+
+.c_s_s {
+    margin-left: 3%;
+    border-style: groove;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "League Spartan", sans-serif;
+    border-color: #C0C0C0;
+    background-color: var(--cor-de-fundo);
+}
+
+.logotipo_css {
+    display: flex;
+    text-align: center;
+    background-color: var(--cor-de-fundo);
+    margin-left: 40%;
+
+    >img {
+        width: 35%;
+        font-size: 1.25px;
+    }
+}
+
+.info_css {
+    text-align: start;
+    font-size: 0.75rem;
+    width: 80%;
+    margin-top: 3%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+}
+
+.js {
+    margin-left: 3%;
+    border-style: groove;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "League Spartan", sans-serif;
+    border-color: #C0C0C0;
+    background-color: var(--cor-de-fundo);
+}
+
+.logotipo_js {
+    display: flex;
+    text-align: center;
+    background-color: var(#EEE5EC);
+    margin-left: 40%;
+
+    >img {
+        width: 35%;
+        font-size: 1.25rem;
+    }
+}
+
+.info_js {
+    text-align: start;
+    font-size: 0.75rem;
+    width: 80%;
+    margin-top: 4%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.legenda {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+/* Responsividade para Tablets */
+
+@media screen and (max-width: 1024px) {
+
+    .logo__lucas {
+
+        >img {
+            width: 8.5rem;
+    }
+}
+    .cabeçalho__menu {
+        display: flex;
+        text-align: center;
+    }
+
+    .cabeçalho__menu__link {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Responsividade para Mobile*/
+
+@media screen and (max-width: 520px) {
+
+    .logo__lucas {
+        display: flex;
+        font-size: 1.5rem;
+        padding-left: 3%;
+        padding-top: 0%;
+
+        >img {
+            width: 7rem;
+        }
+    }
+
+    .cabeçalho__menu__link {
+        display: none;
+    }
+
+    .cabeçalho__menu__icones {
+        display: flex;
+        margin-top: -2rem;
+        padding: 0 10%;
+        gap: 20%;
+    }
+
+    .icone__menu__link {
+        display: unset;
+
+        >img {
+            width: 3rem;
+        }
+    }
+
+    .icone__menu__link:hover {
+        border: solid #afaeaec6;
+        border-width: 1px;
+        box-shadow: 0.25em 0.3em #595656d3;
+        border-radius: 10px;
+    }
+
+
+    .texto__introducao {
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .primeira__linha {
+        font-size: 10px;
+        width: 12.5rem;
+    }
+
+    .segunda__linha {
+        font-size: 12px;
+        width: 17rem;
+        align-items: center;
+    }
+
+    .terceira__linha {
+        font-size: 11px;
+        width: 20rem;
+        align-items: center;
+    }
+
+    .acesse {
+        padding-bottom: 0.5rem;
+        align-items: center;
+
+    }
+
+    .botoes {
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .html {
+        font-size: 15px;
+        padding: 2%;
+        margin: 0 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+
+
+    }
+
+    .c_s_s {
+        font-size: 15px;
+        padding: 2%;
+        margin: 0 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .js {
+        font-size: 15px;
+        padding: 2%;
+        margin: 0 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .legenda {
+        padding-bottom: 10%;
+        align-items: center;
+    }
+}
